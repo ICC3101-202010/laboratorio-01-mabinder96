@@ -10,6 +10,10 @@ namespace Laboratorio1
     {
         static void Main(string[] args)
         {
+            Persona firstperson = new Persona("Francisca", "Binder");
+            Console.ReadKey();
         }
     }
+
 }
+  
