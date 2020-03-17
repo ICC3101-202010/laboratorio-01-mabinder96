@@ -9,11 +9,15 @@ namespace Laboratorio1
     class Program
     {
         static void Main(string[] args)
+
         {
             Persona firstperson = new Persona("Francisca", "Binder");
+            firstperson.Lanzar();
             Console.ReadKey();
         }
     }
+
+
 
 }
   
