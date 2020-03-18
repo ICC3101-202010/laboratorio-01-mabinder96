@@ -11,7 +11,8 @@ namespace Laboratorio1
         static void Main(string[] args)
 
         {
-            Persona firstperson = new Persona("Francisca", "Binder");
+            Persona firstperson = new Persona("Bob", "Kunga");
+            Console.WriteLine("Ca chi pun");
             firstperson.Lanzar();
             Console.ReadKey();
         }
