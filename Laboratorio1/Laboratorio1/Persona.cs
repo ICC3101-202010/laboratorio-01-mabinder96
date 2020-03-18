@@ -10,28 +10,25 @@ namespace Laboratorio1
     class Persona //Creo la clase persona
     {
 
-        public Persona(string nombre, string apellido)
+        public Persona(string nombre, string apellido) //Creo el constructor de la clase persona que recibe un nombre y apellido
         {
                 
         }
 
-        public void Lanzar()
+        public string Lanzar() //Creo el método lanzar, el que imprime el número y además, me retorna lo que corresponde
         {
             Random aleatorio = new Random(); //Creo instancia de Random 
             int numero = aleatorio.Next(0, 3);
-            Console.WriteLine("El numero elegido es: " + numero + ".");
-
-            switch (numero)
+            Console.WriteLine("El numero elegido es: " + numero + "."); //Imprimo el número generado por Random 
+            string elegido=""; 
+            switch (numero) //Establezco que significa cada número
             {
-                case 0: Console.WriteLine("Haz elegido piedra."); break;
-                case 1: Console.WriteLine("Haz elegido papel."); break;
-                case 2: Console.WriteLine("Haz elegido tijera."); break;
+                case 0: elegido= "piedra" ; break;
+                case 1: elegido = "papel"; break;
+                case 2: elegido = "tijera"; break;
             }
-
+            return elegido;
         }
-
-
     }
-
 }
 

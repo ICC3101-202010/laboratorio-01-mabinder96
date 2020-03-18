@@ -11,14 +11,11 @@ namespace Laboratorio1
         static void Main(string[] args)
 
         {
-            Persona firstperson = new Persona("Bob", "Kunga");
-            Console.WriteLine("Ca chi pun");
-            firstperson.Lanzar();
+            Persona firstperson = new Persona("Bob", "Kunga"); //Creo a Bob Kunga
+            Console.WriteLine("Ca chi pun"); //Inicio el juego
+            Console.WriteLine("Y correspone a: "+firstperson.Lanzar()); //Utilizo el método en Bob Kunga
             Console.ReadKey();
         }
     }
-
-
-
 }
   
