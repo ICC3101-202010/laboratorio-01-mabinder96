@@ -12,10 +12,14 @@ namespace Laboratorio1
 
         {
             Persona firstperson = new Persona("Bob", "Kunga"); //Creo a Bob Kunga
+            Persona secondperson = new Persona("Kika", "Binder");
             Console.WriteLine("Ca chi pun"); //Inicio el juego
-            Console.WriteLine("Y correspone a: "+firstperson.Lanzar()); //Utilizo el método en Bob Kunga
+            int numero = firstperson.Lanzar();
+            string correspondencia = firstperson.Cambio(numero);
+            Console.WriteLine(firstperson.Getnombre()+ " " + firstperson.Getapellido() + " lanzaste el número " + numero + " y correspone a " + correspondencia + ".") ; //Utilizo el método en Bob Kunga
             Console.ReadKey();
         }
     }
 }
   
+ 
