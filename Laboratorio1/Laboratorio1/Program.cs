@@ -12,7 +12,6 @@ namespace Laboratorio1
 
         {
             Persona firstperson = new Persona("Bob", "Kunga"); //Creo a Bob Kunga
-            Persona secondperson = new Persona("Kika", "Binder");
             Console.WriteLine("Ca chi pun"); //Inicio el juego
             int numero = firstperson.Lanzar();
             string correspondencia = firstperson.Cambio(numero);
